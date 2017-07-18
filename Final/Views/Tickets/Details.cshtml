@@ -1,0 +1,50 @@
+﻿@model Final.Models.Ticket
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Asiento.DescripcionAsiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Asiento.DescripcionAsiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcion.CodFuncion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcion.CodFuncion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Persona.Paterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persona.Paterno)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodTicket }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

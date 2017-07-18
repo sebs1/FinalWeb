@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d3be96ba5f4a4b7fa401b31c5c6d7434" Name="Diagram1">
+        <EntityTypeShape EntityType="CineDBModel.Asiento" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Cine" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.CinePelicula" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Director" Width="1.5" PointX="0.75" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Funcion" Width="1.5" PointX="5.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Interprete" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Pelicula" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Persona" Width="1.5" PointX="5.25" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Protagonista" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Sala" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CineDBModel.Ticket" Width="1.5" PointX="7.5" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="CineDBModel.FK_Asiento_Sala" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Ticket_Asiento" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_CinePelicula_Cine" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Sala_Cine" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_CinePelicula_Pelicula" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Pelicula_Director" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Funcion_Pelicula" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Ticket_Funcion" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Protagonista_Interprete" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Protagonista_Pelicula" ManuallyRouted="false" />
+        <AssociationConnector Association="CineDBModel.FK_Ticket_Persona" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

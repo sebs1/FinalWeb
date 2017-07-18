@@ -1,0 +1,56 @@
+﻿@model Final.Models.Ticket
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ticket</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Asiento.DescripcionAsiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Asiento.DescripcionAsiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Funcion.CodFuncion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Funcion.CodFuncion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Persona.Paterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Persona.Paterno)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

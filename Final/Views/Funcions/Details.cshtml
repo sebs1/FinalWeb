@@ -1,0 +1,58 @@
+﻿@model Final.Models.Funcion
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Funcion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFuncion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFuncion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelicula.NombrePelicula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pelicula.NombrePelicula)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodFuncion }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

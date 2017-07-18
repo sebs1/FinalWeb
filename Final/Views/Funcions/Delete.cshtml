@@ -1,0 +1,64 @@
+﻿@model Final.Models.Funcion
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Funcion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraInicio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HoraFin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoraFin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaFuncion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaFuncion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelicula.NombrePelicula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pelicula.NombrePelicula)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

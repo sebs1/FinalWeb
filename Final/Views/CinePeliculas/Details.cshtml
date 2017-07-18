@@ -1,0 +1,42 @@
+﻿@model Final.Models.CinePelicula
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CinePelicula</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EnCartelera)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnCartelera)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cine.NombreCine)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cine.NombreCine)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pelicula.NombrePelicula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pelicula.NombrePelicula)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

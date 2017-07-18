@@ -1,0 +1,26 @@
+﻿@model Final.Models.Director
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Director</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreDirector)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreDirector)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CodDirector }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
